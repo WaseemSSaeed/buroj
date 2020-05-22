@@ -1,0 +1,17 @@
+*{
+    font-family: 'Almarai', sans-serif;
+}
+
+.flex-card-headline{
+    width: 100%;
+    font-size: 30px;
+}
+
+.flex-card-subtitle::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: violet;
+    border-radius: 50%;
+}

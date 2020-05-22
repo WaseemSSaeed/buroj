@@ -1,52 +1,41 @@
-<link rel="stylesheet" href="./style.css">
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="user-scalable=no">
-  <title>Howler.js Audio Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/layout.css">
+    <link rel="stylesheet" href="./style/items.css">
+    <link rel="stylesheet" href="./style/items-hover.css">
+    <title>Document</title>
 </head>
-<body>
-  <!-- Top Info -->
-  <div id="title">
-    <span id="track"></span>
-    <div id="timer">0:00</div>
-    <div id="duration">0:00</div>
-  </div>
-
-  <!-- Controls -->
-  <div class="controlsOuter">
-    <div class="controlsInner">
-      <div id="loading"></div>
-      <div class="btn" id="playBtn"></div>
-      <div class="btn" id="pauseBtn"></div>
-      <div class="btn" id="prevBtn"></div>
-      <div class="btn" id="nextBtn"></div>
+<body dir="rtl">
+    <div class="flex-parent" onclick="openVoice('./ep1.htm')" ep="./ep1.htm">
+        <div class="flex-card">
+            <div class="flex-card-headline">
+                <span>التهم هذا الضفدع</span>
+            </div>
+            <div class="flex-card-subtitle">
+                <span>بروج عمر</span>
+            </div>
+        </div>
     </div>
-    <div class="btn" id="playlistBtn"></div>
-    <div class="btn" id="volumeBtn"></div>
-  </div>
-
-  <!-- Progress -->
-  <div id="waveform"></div>
-  <div id="bar"></div>
-  <div id="progress"></div>
-
-  <!-- Playlist -->
-  <div id="playlist">
-    <div id="list"></div>
-  </div>
-
-  <!-- Volume -->
-  <div id="volume" class="fadeout">
-    <div id="barFull" class="bar"></div>
-    <div id="barEmpty" class="bar"></div>
-    <div id="sliderBtn"></div>
-  </div>
-
-  <!-- Scripts -->
-  <script src="./howler.js/src/howler.core.js"></script>
-    <script src="./siriwave.js"></script>
-  <script src="./player.js"></script>
+    <div class="flex-parent" onclick="openVoice('./ep2.htm')" ep="./ep1.htm">
+        <div class="flex-card">
+            <div class="flex-card-headline">
+                <span>كيف تحصل على الحب الذي تريد</span>
+            </div>
+            <div class="flex-card-subtitle">
+                <span>بروج عمر</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+<script>
+    //this is a temporary method just for testing
+    function openVoice(file){
+        window.open(file, '_self');
+    }
+</script>

@@ -1,0 +1,13 @@
+.flex-parent{
+    display: flex;
+    min-width: 100%;
+}
+.flex-card{
+    color: rgb(64, 64, 64);
+    flex-basis: 100%;
+    min-height: 100px;
+    border: gray 2px solid;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 4px;
+}

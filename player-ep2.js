@@ -23,7 +23,7 @@ var Player = function(playlist) {
   this.index = 0;
 
   // Display the title of the first track.
-  track.innerHTML = 'كتاب ' + playlist[0].title;
+  track.innerHTML = /*'1. ' + */ 'كتاب ' + playlist[0].title;
 
   // Setup the playlist display.
   playlist.forEach(function(song) {
@@ -54,7 +54,7 @@ Player.prototype = {
       sound = data.howl;
     } else {
       sound = data.howl = new Howl({
-        src: ['./audio/' + data.file + '.mp3', './audio/' + data.file + '.mp3', './audio/' + data.file + '.m4a'],
+        src: ['./audio/' + data.file + '.m4a'],
         html5: true, // Force to HTML5 so that the audio can stream in (best for large files).
         onplay: function() {
           // Display the duration.
@@ -101,7 +101,7 @@ Player.prototype = {
     sound.play();
 
     // Update the track display.
-    track.innerHTML = data.title;
+    track.innerHTML = data.title; /*(index + 1) + '. ' + */
 
     // Show the pause button.
     if (sound.state() === 'loaded') {
@@ -271,8 +271,8 @@ Player.prototype = {
 // Setup our new audio player class and pass it the playlist.
 var player = new Player([
   {
-    title: 'التهم الضفدع',
-    file: 'audio2',
+    title: 'الحب الذي تريد',
+    file: 'ep2',
     howl: null
   }
 ]);
