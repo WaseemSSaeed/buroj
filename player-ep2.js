@@ -284,12 +284,12 @@ playBtn.addEventListener('click', function() {
 pauseBtn.addEventListener('click', function() {
   player.pause();
 });
-prevBtn.addEventListener('click', function() {
+/*prevBtn.addEventListener('click', function() {
   player.skip('prev');
 });
 nextBtn.addEventListener('click', function() {
   player.skip('next');
-});
+});*/
 waveform.addEventListener('click', function(event) {
   player.seek(event.clientX / window.innerWidth);
 });
