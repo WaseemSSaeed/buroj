@@ -4,9 +4,11 @@
 
 .flex-card-headline{
     width: 100%;
-    font-size: 30px;
+    font-size: 20px;
 }
-
+.flex-card-subtitle{
+    font-size: 16px;
+}
 .flex-card-subtitle::before{
     content: '';
     display: inline-block;
@@ -14,4 +16,13 @@
     height: 10px;
     background-color: violet;
     border-radius: 50%;
+}
+
+.cov{
+    font-family: cov;
+    color: teal;
+}
+
+.cmd{
+    display: inline-block;
 }
